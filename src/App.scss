@@ -1,0 +1,129 @@
+
+
+.container{
+  
+    max-width: 1170px;
+    padding:0 15px;
+    margin: auto;
+   
+}
+
+.countries{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+        flex-wrap: wrap;
+    }
+
+    &__card{
+        width:300px;
+        height:250px;
+        transition: transform ease 0.8s;
+       
+        border: 3px solid #120907;
+        box-shadow:  0 0 8px rgba(0,0,0,0.5);
+        border-radius: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        p{
+            
+            padding: 5px;
+            color:#fffbe8
+        
+        }
+       
+        
+        img{
+          
+            width: 100%;
+            object-fit: cover;
+        }
+        &:hover{
+        
+             transform: scale(1.1);
+        }
+        
+    }
+    &__input{
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+        padding:15px;
+        border:1.5px solid black;
+        border-radius: 15px;
+        outline:none;
+        font-size: 22px;
+        &::placeholder{
+            color:rgba(0,0,0,0.7)
+        }
+        
+    }
+}
+
+.detailsCountry{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+    height:100vh;
+   &__card{
+    transition: transform ease 0.8s;
+    max-width:400px;
+    width:100%;
+    max-height:500px;
+    border: 3px solid #120907;
+    
+    box-shadow:  0 0 8px rgba(0,0,0,0.5);
+    border-radius: 6px;
+    font-size: 30px;
+    color:#fffbe8;
+    cursor: pointer;
+
+    div,button{
+        margin-left: 15px;
+    }
+    button{
+        margin:10px;
+        padding:5px 50px;
+        font-size: 25px;
+        box-shadow:  0 0 8px rgba(0,0,0,0.5);
+        border-radius: 6px;
+        cursor: pointer;
+    }
+   
+    img{
+        width: 100%;
+    }
+   }
+}
+
+.loading{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+    color:#FFF;
+    font-size:25px
+}
+
+//pagination 
+
+.pageBtns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 9px;
+    button{
+         padding:8px;
+         font-size: 18.7px;
+         cursor: pointer;
+    }
+}
